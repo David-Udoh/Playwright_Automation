@@ -3,7 +3,6 @@ import {test, expect} from '@playwright/test'
 test('demo 1', async ({page}) => {
 
     await page.goto('https://demo.applitools.com/')
-    await page.pause()
     await page.locator('id=username').fill('starboy homes')
     await page.locator('id=password').fill('@$t!7oo')
     await page.locator('id=log-in').click()
